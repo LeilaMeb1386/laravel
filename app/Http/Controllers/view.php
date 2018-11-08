@@ -56,7 +56,7 @@ class view extends Controller
     {
         $genres = Genre::all();
 
-    return view('addGenre' , ['genres' => $genres]););
+    return view('addGenre' , ['genres' => $genres]);
 
     }
     public function updateActor(Request $request)

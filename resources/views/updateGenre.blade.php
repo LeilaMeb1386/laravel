@@ -6,7 +6,7 @@
 
     <form  action="/updateGenreAction" method="POST">
       @csrf
-      <input type="hidden" name="id" value="{{ $actor->id }}">
+      <input type="hidden" name="id" value="{{ $genre->id }}">
       <input required type="text" name="name" value="{{ $genre->name }}">
 
 

@@ -14,7 +14,7 @@ class Genre extends Controller
   $actor->name = $request->input('name');
   $actor->save();
 
-   return redirect('/serieList');
+   return redirect('/addGenre');
   }
   public function deleteGenre(Request $request)
   //ou \App\Serie::destroy($request->input('id'));

@@ -9,12 +9,12 @@
   @csrf
      <label for="title">Title serie</label> : <input type="text" name="title"/>
      <label for="publication_year">Publication year</label> : <input type="number" name="publication_year" />
-     <select class="" name="actors">
+     <select multiple class="" name="actors[]">
        @foreach($actors as $actor)
        <option value="{{ $actor->id}}">{{$actor->completeName() }}</option>
      @endforeach
      </select>
-     <select class="" name="genres">
+     <select multiple class="" name="genres[]">
        @foreach($genres as $genre)
        <option value="{{ $genre->id}}">{{$genre->name }}</option>
      @endforeach

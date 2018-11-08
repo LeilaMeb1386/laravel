@@ -9,7 +9,7 @@
       <input type="hidden" name="id" value="{{ $actor->id }}">
       <input required type="text" name="firstname" value="{{ $actor->firstname }}">
       <input required type="text" name="lastname" value="{{ $actor->lastname }}">
-    
+
 
       <input type="submit" name="" value="Update"></form>
 

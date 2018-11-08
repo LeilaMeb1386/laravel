@@ -13,6 +13,7 @@
      <input type="submit" value="Insert" />
 </form>
 
+
 <h1>Liste des acteurs</h1>
 <div class="list">
 <table>
@@ -29,7 +30,7 @@
                  <td>{{ $actor->firstname}}</td>
                 <td>{{ $actor->lastname}}</td>
 
-      
+
            <td><form class=""  action="/deleteActor" method="POST"> @csrf <input type="hidden" name="id" value="{{ $actor->id }}"><input type="submit" name="" value="X"></form></td>
            <td><form class=""  action="/updateActor" method="POST"> @csrf <input type="hidden" name="id" value="{{ $actor->id }}"><input type="submit" name="" value="U"></form></td>
          </tr>
